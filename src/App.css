@@ -1,0 +1,306 @@
+/* public */
+* {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #747474;
+}
+
+.user-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  width: 92%;
+}
+/* for listpage (can be in module) */
+
+.list-page__titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.list-page__titles__div {
+  flex-grow: 1;
+}
+
+.list-page__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.list-page__cards__div {
+  flex: 50%;
+}
+
+.message {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #208efb;
+  background-image: url("../public/icons8-message-48.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.message:hover {
+  width: 55px;
+  height: 55px;
+}
+
+/* for usercard (can be in module) */
+
+.user-card {
+  width: 90%;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto 30px auto;
+  border-radius: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: width 1s;
+}
+
+.user-card__profile-pic-div {
+  flex: 13%;
+  text-align: center;
+}
+
+.user-card__profile-pic-div__profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.user-card__name-and-id {
+  flex: 47%;
+}
+
+.user-card__category {
+  flex: 30%;
+  text-align: center;
+}
+
+.user-card__category__name {
+  background-color: #f0f0f0;
+  font-size: 15px;
+  border-radius: 15px;
+  display: inline;
+  padding: 7px;
+}
+
+.user-card__other {
+  background-image: url("../public/icons8-menu-vertical-30.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* for DetailPage (can be in module) */
+
+.container {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.user-profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+}
+
+.user-profile__image {
+  border-radius: 50%;
+  width: 100px;
+  padding: 3px;
+  border: 5px solid #3767a9;
+}
+
+.user-profile__name-and-id {
+  flex: 10%;
+  margin-left: 10px;
+}
+
+.user-profile__name-and-id__id {
+  color: #3767a9;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-details__div {
+  flex: 25%;
+  height: 40vh;
+}
+
+.user-detail__div-two {
+  background-color: #c0f2e6;
+  height: 100%;
+  width: 90%;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+
+.user-detail__div-two-first__container {
+  width: 80%;
+  margin: 0px auto 30px auto;
+}
+
+.user-detail__div-two-first__value {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.user-detail__div-two-second__container {
+  width: 80%;
+  margin: 30px auto 0px auto;
+}
+.user-detail__div-two-second__value {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.user-detail__div-two__inner-div__title {
+  font-size: 20px;
+}
+
+.user-detail__div-two__inner-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #0055d4;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* for UserDetail (can be in module) */
+
+.user-detail__div {
+  width: 90%;
+  height: 47.5%;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-detail__div__container {
+  width: 80%;
+  margin: auto auto auto auto;
+}
+
+.user-detail__div__inner-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-detail__div__inner-div__title {
+  font-size: 20px;
+}
+
+.user-detail__div__value {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.help {
+  width: 20px;
+  height: 20px;
+  background-image: url("../public/icons8-help-24.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.white-help {
+  width: 20px;
+  height: 20px;
+  background-image: url("../public/icons8-white-help-24.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+/* not found (can be in module) */
+.not-found {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found__button {
+  color: #f2f2f2;
+  width: 15vw;
+  height: 50px;
+  background-color: #3767a9;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
